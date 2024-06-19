@@ -120,4 +120,9 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # alias ls='colorls --sd'
+alias ls='eza --icons=always -s=extension'
+alias ll='eza --icons=always -l -s=extension'
+alias la='eza --icons=always -a -s=extension'
+alias lla='eza --icons=always -al -s=extension'
+alias lla='eza --icons=always -al -s=extension'
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
