@@ -125,3 +125,6 @@ alias ll='eza --icons=always --grid -l -s=extension'
 alias la='eza --icons=always --grid -a -s=extension'
 alias lla='eza --icons=always --grid -al -s=extension'
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+
+# aliases for the default lib
+alias c='clear'
