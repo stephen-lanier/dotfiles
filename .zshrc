@@ -128,3 +128,8 @@ export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
 # aliases for the default lib
 alias c='clear'
+
+# bat setup
+export BAT_THEME="ansi"
+
+eval $(thefuck --alias fk)
