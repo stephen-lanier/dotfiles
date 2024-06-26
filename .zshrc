@@ -128,8 +128,17 @@ export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
 # aliases for the default lib
 alias c='clear'
+alias bc1='cd ~/Documents/SU/TA/24rq-bc1/'
 
 # bat setup
 export BAT_THEME="ansi"
 
+# thefuck setup
 eval $(thefuck --alias fk)
+
+# zoxide setup
+eval "$(zoxide init zsh)"
+
+# fzf setup
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
