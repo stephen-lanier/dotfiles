@@ -127,7 +127,12 @@ alias lla='eza --icons=always --grid -al -s=extension'
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
 # aliases for the default lib
+export VISUAL="/usr/bin/vim"
+export EDITOR="$VISUAL"
 alias c='clear'
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
 alias bc1='cd ~/Documents/SU/TA/24rq-bc1/'
 
 # bat setup
