@@ -1,9 +1,9 @@
 return {
-    'shaunsingh/nord.nvim',
-    name = 'nord',
+    "shaunsingh/nord.nvim",
+    name = "nord",
     lazy = false,
     priority = 1000,
-    opts = function()  
+    opts = function()
         vim.g.nord_contrast = true
         vim.g.nord_borders = false
         vim.g.nord_disable_background = true
@@ -12,6 +12,6 @@ return {
         vim.g.nord_bold = true
     end,
     config = function()
-        vim.cmd.colorscheme 'nord'
-    end
+        vim.cmd.colorscheme("nord")
+    end,
 }

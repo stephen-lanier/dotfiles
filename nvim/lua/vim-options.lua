@@ -6,4 +6,5 @@ vim.cmd("set shiftwidth=4")
 vim.cmd("set nu")
 vim.cmd("set rnu")
 vim.cmd("set nowrap")
-vim.g.mapleader = ' '
+vim.cmd("set textwidth=80")
+vim.g.mapleader = " "

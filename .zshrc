@@ -129,6 +129,9 @@ export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 # aliases for the default lib
 export VISUAL="/usr/bin/vim"
 export EDITOR="$VISUAL"
+alias rot13='tr "[a-zA-Z]" "[n-za-mN-ZA-M]"'
+alias rot18='tr "[a-zA-Z0-9]" "[n-za-mN-ZA-M5-90-4]"'
+alias rot47='tr "\!-~" "P-~\!-O"'
 alias c='clear'
 alias rm='rm -i'
 alias cp='cp -i'
