@@ -136,7 +136,6 @@ alias c='clear'
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
-alias bc1='cd ~/Documents/SU/TA/24rq-bc1/'
 
 # bat setup
 export BAT_THEME="ansi"
@@ -150,3 +149,4 @@ eval "$(zoxide init zsh)"
 # fzf setup
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH" 
