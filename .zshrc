@@ -137,6 +137,9 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 
+# "interactive neovim" alias for finding file and then opening in neovim
+alias inv='nvim $(fzf -m --preview="bat --color=always {}")'
+
 # bat setup
 export BAT_THEME="ansi"
 
