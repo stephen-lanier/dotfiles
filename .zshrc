@@ -137,8 +137,11 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 alias hide='cmatrix -abC blue'
+
+# useful tmux shortcuts
 alias ta='tmux a'
 alias tat='tmux a -t'
+alias tls='tmux ls'
 
 # "interactive neovim" alias for finding file and then opening in neovim
 alias inv='nvim $(fzf -m --preview="bat --color=always {}")'
