@@ -7,4 +7,5 @@ vim.cmd("set nu")
 vim.cmd("set rnu")
 vim.cmd("set nowrap")
 vim.cmd("set textwidth=80")
+vim.cmd("set nrformats=")
 vim.g.mapleader = " "
