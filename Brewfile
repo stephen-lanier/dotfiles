@@ -64,6 +64,8 @@ brew "hugo"
 brew "icu4c@75"
 # Enhanced version of john, a UNIX password cracker
 brew "john-jumbo"
+# Handy way to save and run project-specific commands
+brew "just"
 # Portable Foreign Function Interface library
 brew "libffi"
 # YAML Parser
