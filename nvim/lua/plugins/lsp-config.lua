@@ -24,15 +24,16 @@ return {
     {
         "neovim/nvim-lspconfig",
         config = function()
-            local lspconfig = require("lspconfig")
+            -- Configure LSP servers using new vim.lsp.config API
+            vim.lsp.config("*", {
+                root_markers = { ".git" },
+            })
 
-            lspconfig.lua_ls.setup({})
-            lspconfig.ts_ls.setup({})
-            lspconfig.html.setup({})
-            lspconfig.jdtls.setup({})
-            lspconfig.clangd.setup({})
-            lspconfig.bashls.setup({})
-            lspconfig.pylsp.setup({})
+            -- Enable specific LSP servers
+            local servers = { "lua_ls", "ts_ls", "html", "jdtls", "clangd", "bashls", "pylsp" }
+            for _, server in ipairs(servers) do
+                vim.lsp.enable(server)
+            end
 
             vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
             vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
