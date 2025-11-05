@@ -77,7 +77,11 @@ plugins=(
     macos
     iterm2
     docker
+    vi-mode
 )
+
+# enable vi mode
+bindkey -v
 
 source $ZSH/oh-my-zsh.sh
 
@@ -152,3 +156,6 @@ export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 fpath+=("$(brew --prefix)/share/zsh/site-functions")
 autoload -U promptinit; promptinit
 prompt pure
+
+# set nvim as manpager
+export MANPAGER="nvim +Man!"
