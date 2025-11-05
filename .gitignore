@@ -1,1 +1,8 @@
 *.DS_Store
+
+# Neovim generated files
+nvim/.luarc.json
+nvim/lazy-lock.json
+
+# Backup files created by install.sh
+*.backup
