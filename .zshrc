@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 export PATH="/opt/homebrew/opt/ruby/bin:/opt/homebrew/lib/ruby/gems/3.1.0/bin:$PATH"
 export GEM_HOME="$HOME/.gem"
-export PATH="/Users/stephenlanier/.gem/ruby/3.3.0/bin:$PATH"
+export PATH="$HOME/.gem/ruby/3.3.0/bin:$PATH"
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -111,12 +111,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# alias ls='colorls --sd'
 alias ls='eza --icons=always -s=extension'
 alias ll='eza --icons=always -l -s=extension'
 alias la='eza --icons=always -a -s=extension'
 alias lla='eza --icons=always -al -s=extension'
-export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
 # aliases for the default lib
 export VISUAL="/usr/bin/vim"
@@ -150,6 +148,8 @@ eval "$(zoxide init zsh)"
 # fzf setup
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
+
+# openjdk setup
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH" 
 
 # pure omz theme setup

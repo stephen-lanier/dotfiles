@@ -136,8 +136,6 @@ cask "aerospace"
 cask "anaconda"
 # Application uninstaller
 cask "appcleaner"
-# Text editor
-cask "atom"
 # Developer platform
 cask "dotnet-sdk"
 # Web browser
