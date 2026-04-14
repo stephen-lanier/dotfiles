@@ -1,9 +1,5 @@
 tap "nikitabobko/tap"
 tap "pwndbg/tap"
-# General-purpose data compression with high compression ratio
-brew "xz"
-# New file format for still image compression
-brew "jpeg-xl"
 # Codec library for encoding and decoding AV1 video streams
 brew "aom"
 # Tool for generating GNU Standards-compliant Makefiles
@@ -30,30 +26,30 @@ brew "docker"
 brew "eza"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
-# GNU Transport Layer Security (TLS) Library
-brew "gnutls"
-# OpenType text shaping engine
-brew "harfbuzz"
-# Subtitle renderer for the ASS/SSA subtitle format
-brew "libass"
-# Framework for layout and rendering of i18n text
-brew "pango"
-# OCR (Optical Character Recognition) engine
-brew "tesseract"
-# Play, record, convert, and stream audio and video
+# Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
 # Banner-like program prints strings as ASCII art
 brew "figlet"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# General-purpose data compression with high compression ratio
+brew "xz"
 # GNU compiler collection
 brew "gcc"
 # GNU database manager
 brew "gdbm"
+# OpenType text shaping engine
+brew "harfbuzz"
+# Framework for layout and rendering of i18n text
+brew "pango"
+# OCR (Optical Character Recognition) engine
+brew "tesseract"
 # Interpreter for PostScript and PDF
 brew "ghostscript"
 # Distributed revision control system
 brew "git"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
 # Terminal based graphical activity monitor inspired by gtop and vtop
 brew "gotop"
 # General-purpose preprocessor with customizable syntax
@@ -64,8 +60,14 @@ brew "hugo"
 brew "icu4c@75"
 # Enhanced version of john, a UNIX password cracker
 brew "john-jumbo"
+# New file format for still image compression
+brew "jpeg-xl"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
 # Handy way to save and run project-specific commands
 brew "just"
+# Subtitle renderer for the ASS/SSA subtitle format
+brew "libass"
 # Portable Foreign Function Interface library
 brew "libffi"
 # YAML Parser
@@ -78,8 +80,6 @@ brew "neofetch"
 brew "tree-sitter"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.13"
 # Port scanning utility for large networks
 brew "nmap"
 # Open-source, cross-platform JavaScript runtime environment
@@ -88,20 +88,30 @@ brew "node"
 brew "openblas"
 # Package for scientific computing with Python
 brew "numpy"
+# High performance message passing library
+brew "open-mpi"
 # Development kit for the Java programming language
 brew "openjdk"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@1.1"
+# Multithreaded PNG optimizer written in Rust
+brew "oxipng"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
+# PNG image optimizing utility
+brew "pngquant"
 # Pretty, minimal and fast ZSH prompt
 brew "pure"
+# CTF framework used by Gallopsled in every CTF
+brew "pwntools"
 # Python 3 bindings for the Cairo graphics library
 brew "py3cairo"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.11"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.13"
 # Install various Ruby versions and implementations
 brew "ruby-build"
 # Ruby version manager
@@ -131,13 +141,11 @@ brew "wget"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # AeroSpace is an i3-like tiling window manager for macOS
-cask "aerospace"
+cask "nikitabobko/tap/aerospace"
 # Distribution of the Python and R programming languages for scientific computing
 cask "anaconda"
 # Application uninstaller
 cask "appcleaner"
-# Developer platform
-cask "dotnet-sdk"
 # Web browser
 cask "firefox"
 # Web browser
@@ -153,7 +161,7 @@ cask "microsoft-auto-update"
 # Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
 # Exploit Development and Reverse Engineering with GDB Made Easy
-cask "pwndbg-gdb"
+cask "pwndbg/tap/pwndbg-gdb"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
 # Emoji picker optimised for blind people

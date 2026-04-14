@@ -22,6 +22,13 @@ return {
         end,
     },
     {
+        "simrat39/rust-tools.nvim",
+        config = function()
+            require("rust-tools").setup({
+            })
+        end,
+    },
+    {
         "neovim/nvim-lspconfig",
         config = function()
             -- Configure LSP servers using new vim.lsp.config API
