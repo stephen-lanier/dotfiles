@@ -56,8 +56,6 @@ brew "gotop"
 brew "gpp"
 # Configurable static site generator
 brew "hugo"
-# C/C++ and Java libraries for Unicode and globalization
-brew "icu4c@75"
 # Enhanced version of john, a UNIX password cracker
 brew "john-jumbo"
 # New file format for still image compression
@@ -92,8 +90,6 @@ brew "numpy"
 brew "open-mpi"
 # Development kit for the Java programming language
 brew "openjdk"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@1.1"
 # Multithreaded PNG optimizer written in Rust
 brew "oxipng"
 # Swiss-army knife of markup format conversion
