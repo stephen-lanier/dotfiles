@@ -17,6 +17,7 @@ return {
                     "clangd",
                     "bashls",
                     "pylsp",
+                    "rust_analyzer",
                 },
             })
         end,
