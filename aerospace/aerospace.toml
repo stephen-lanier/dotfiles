@@ -208,29 +208,40 @@ down = 'volume down'
 up = 'volume up'
 shift-down = ['volume set 0', 'mode main']
 
+
+# ----- named windows -----
+
+# A for Anki
+[[on-window-detected]]
+if.app-id = 'net.ankiweb.launcher'
+run = ['move-node-to-workspace A']
+
 # B for Browser
 [[on-window-detected]]
 if.app-id = 'com.google.Chrome'
-run = ['move-node-to-workspace B']  # The callback itself
-
-# T for Terminal
-[[on-window-detected]]
-if.app-id = 'com.googlecode.iterm2'
-run = ['move-node-to-workspace T']  # The callback itself
-
-# M for Music and Messages
-[[on-window-detected]]
-if.app-id = 'com.apple.Music'
-run = ['move-node-to-workspace M']  # The callback itself
-
-[[on-window-detected]]
-if.app-id = 'com.hnc.Discord'
-run = ['move-node-to-workspace M']  # The callback itself
+run = ['move-node-to-workspace B']
 
 # C for Claude and ChatGPT
 [[on-window-detected]]
 if.app-id = 'com.anthropic.claudefordesktop'
-run = ['move-node-to-workspace C']  # The callback itself
+run = ['move-node-to-workspace C']
+
+# M for Music and Messages
+[[on-window-detected]]
+if.app-id = 'com.apple.Music'
+run = ['move-node-to-workspace M']
+
+[[on-window-detected]]
+if.app-id = 'com.hnc.Discord'
+run = ['move-node-to-workspace M']
+
+# T for Terminal
+[[on-window-detected]]
+if.app-id = 'com.googlecode.iterm2'
+run = ['move-node-to-workspace T']
+
+
+# ----- floating windows -----
 
 # finder
 [[on-window-detected]]
