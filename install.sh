@@ -75,6 +75,10 @@ create_symlink "$SCRIPT_DIR/nvim" "$CONFIG_DIR/nvim"
 mkdir -p "$CONFIG_DIR/aerospace"
 create_symlink "$SCRIPT_DIR/aerospace/aerospace.toml" "$CONFIG_DIR/aerospace/aerospace.toml"
 
+# Create symlink for global git ignore
+mkdir -p "$CONFIG_DIR/git"
+create_symlink "$SCRIPT_DIR/git/ignore" "$CONFIG_DIR/git/ignore"
+
 # Create symlinks for dotfiles
 for dotfile in .zshrc .tmux.conf; do
     create_symlink "$SCRIPT_DIR/$dotfile" "$HOME/$dotfile"
