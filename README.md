@@ -18,6 +18,7 @@ chmod +x install.sh
 - **Tmux** - vim-style navigation, minimal theme
 - **AeroSpace** - i3-like tiling window manager
 - **Brewfile** - all packages and applications
+- **templates** - pandoc/CSS/LaTeX templates for styling markdown printouts (`mdhtml`/`mdpocket`/`mdarchive` shell functions in `.zshrc`)
 
 ## Post-install
 

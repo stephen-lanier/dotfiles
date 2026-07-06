@@ -1,0 +1,10 @@
+pdf-engine: lualatex
+number-sections: true
+variables:
+  geometry: "margin=1.2in"
+  mainfont: "Palatino"
+  sansfont: "Helvetica"
+  monofont: "Menlo"
+  fontsize: 12pt
+include-in-header:
+  - /Users/stlmba/templates/fancyheaders.tex

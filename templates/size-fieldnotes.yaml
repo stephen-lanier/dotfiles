@@ -1,0 +1,4 @@
+variables:
+  documentclass: extarticle
+  geometry: "paperwidth=3.5in,paperheight=5.5in,margin=0.25in"
+  fontsize: 9pt

@@ -159,3 +159,27 @@ prompt pure
 
 # set nvim as manpager
 export MANPAGER="nvim +Man!"
+
+# --- markdown -> notebook print templates (~/templates) ---
+# force a page break in mdpocket/mdarchive output with a raw-latex fence
+# (dropped silently by mdhtml, so it's safe to leave in the .md source):
+#   ```{=latex}
+#   \newpage
+#   ```
+mdhtml() {
+  local src="$1"
+  if [[ -z "$src" ]]; then echo "usage: mdhtml <file.md>"; return 1; fi
+  pandoc "$src" -s --css="$HOME/templates/journal.css" --embed-resources -o "${src%.md}.html"
+}
+
+mdpocket() {
+  local src="$1" size="${2:-fieldnotes}"
+  if [[ -z "$src" ]]; then echo "usage: mdpocket <file.md> [fieldnotes|a6]"; return 1; fi
+  pandoc "$src" --defaults="$HOME/templates/pdf-journal.yaml" --defaults="$HOME/templates/size-$size.yaml" -o "${src%.md}.pdf"
+}
+
+mdarchive() {
+  local src="$1"
+  if [[ -z "$src" ]]; then echo "usage: mdarchive <file.md>"; return 1; fi
+  pandoc "$src" --defaults="$HOME/templates/pdf-textbook.yaml" --defaults="$HOME/templates/size-a5.yaml" -o "${src%.md}.pdf"
+}

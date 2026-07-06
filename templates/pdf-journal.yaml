@@ -1,0 +1,8 @@
+pdf-engine: xelatex
+variables:
+  geometry: "margin=0.85in,paperwidth=8.5in,paperheight=11in"
+  fontsize: 11pt
+  mainfont: "Menlo"
+  linestretch: 1.25
+include-in-header:
+  - /Users/stlmba/templates/journal-header.tex

@@ -79,6 +79,9 @@ create_symlink "$SCRIPT_DIR/aerospace/aerospace.toml" "$CONFIG_DIR/aerospace/aer
 mkdir -p "$CONFIG_DIR/git"
 create_symlink "$SCRIPT_DIR/git/ignore" "$CONFIG_DIR/git/ignore"
 
+# Create symlink for markdown print templates (used by mdhtml/mdpocket/mdarchive in .zshrc)
+create_symlink "$SCRIPT_DIR/templates" "$HOME/templates"
+
 # Create symlinks for dotfiles
 for dotfile in .zshrc .tmux.conf; do
     create_symlink "$SCRIPT_DIR/$dotfile" "$HOME/$dotfile"

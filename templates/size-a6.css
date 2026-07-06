@@ -1,0 +1,13 @@
+@page {
+  size: 105mm 148mm;
+  margin: 7mm;
+}
+body {
+  max-width: none;
+  margin: 0;
+  padding: 4mm;
+  font-size: 9px;
+  line-height: 1.4;
+}
+h1 { font-size: 1rem; }
+h2 { font-size: 0.75rem; padding: 0.1rem 0.35rem; margin: 0.9rem 0 0.4rem; }

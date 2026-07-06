@@ -1,0 +1,118 @@
+@page {
+  size: letter;
+  margin: 0.85in;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "JetBrains Mono", "SF Mono", "Courier New", Courier, monospace;
+  color: #1a1a1a;
+  background: #f5f2ea;
+  line-height: 1.55;
+  max-width: 7in;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem 3rem;
+}
+
+.stamp {
+  text-align: right;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #6b6459;
+  border-bottom: 1px dashed #b8ae9a;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 0 0 0.3rem;
+  border-bottom: 2px solid #1a1a1a;
+  padding-bottom: 0.5rem;
+}
+
+h1::before {
+  content: "// ";
+  color: #8a8272;
+}
+
+.subtitle {
+  font-size: 0.85rem;
+  color: #6b6459;
+  margin: 0 0 1.75rem;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 1.05rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 2.2rem 0 0.75rem;
+  padding: 0.25rem 0.6rem;
+  background: #1a1a1a;
+  color: #f5f2ea;
+  display: inline-block;
+}
+
+h2 + ul {
+  page-break-inside: avoid;
+}
+
+ul {
+  margin: 0 0 1rem;
+  padding-left: 1.4rem;
+}
+
+ul ul {
+  margin-top: 0.35rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1.3rem;
+}
+
+li {
+  margin-bottom: 0.45rem;
+}
+
+li::marker {
+  content: "› ";
+  color: #8a8272;
+}
+
+ul ul li::marker {
+  content: "- ";
+}
+
+li li {
+  margin-bottom: 0.3rem;
+  color: #2e2b25;
+}
+
+.footer-note {
+  margin-top: 2.5rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed #b8ae9a;
+  font-size: 0.75rem;
+  color: #6b6459;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@media print {
+  body {
+    background: #ffffff;
+    margin: 0 auto;
+  }
+  h2 {
+    background: #1a1a1a;
+    color: #ffffff;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
