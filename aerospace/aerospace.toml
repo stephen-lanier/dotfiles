@@ -57,12 +57,14 @@ preset = 'qwerty'
 #                 Monitor pattern is the same as for 'workspace-to-monitor-force-assignment'.
 #                 See: https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
-inner.horizontal    = 10
-inner.vertical      = 10
-outer.left          = 20
-outer.bottom        = 20
-outer.top           = 20
-outer.right         = 20
+# Built-in laptop display gets no gaps (screen is tight already).
+# Any other monitor (external display) falls through to the default value.
+inner.horizontal    = [{ monitor."built-in" = 0 }, 10]
+inner.vertical      = [{ monitor."built-in" = 0 }, 10]
+outer.left          = [{ monitor."built-in" = 0 }, 20]
+outer.bottom        = [{ monitor."built-in" = 0 }, 20]
+outer.top           = [{ monitor."built-in" = 0 }, 20]
+outer.right         = [{ monitor."built-in" = 0 }, 20]
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
